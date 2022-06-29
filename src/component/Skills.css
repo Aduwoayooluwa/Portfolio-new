@@ -1,0 +1,14 @@
+.skill-list {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-list p {
+    width: 102px;
+    background-color: transparent;
+    border: 1px dotted dodgerblue;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
