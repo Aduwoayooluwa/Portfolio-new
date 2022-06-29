@@ -97,7 +97,7 @@ const Hero = () => {
                 }}
                 >
 
-                <img src="img1-hero.jpg" alt="" />
+                <img src="img-hero.png" alt="" />
                 </motion.div>
             
             </div>

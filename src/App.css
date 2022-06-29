@@ -171,6 +171,7 @@
     padding: 20px;
     overflow: scroll;
     overflow-y: hidden ;
+    font-family: 'Questrial', sans-serif;
 }
 
 .portfolio .projects > div {
@@ -184,7 +185,7 @@
 .portfolio .projects > div img{
     height: 250px;
     width: 250px;
-    margin-left: 8%;
+    margin-left: 0%;
 }
 
 .portfolio .projects > div h2 {
@@ -204,7 +205,7 @@
     border: none;
     border-radius: 25px;
     background-color: #1363DF;
-    transform: translateX(90%)
+    transform: translateX(70%)
     
 }
 
