@@ -207,7 +207,8 @@
     border: none;
     border-radius: 25px;
     background-color: #1363DF;
-    transform: translateX(70%)
+    transform: translateX(70%);
+    font-family: 'Varela Round', sans-serif;
     
 }
 
@@ -219,7 +220,7 @@
 
 .contact-page {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 30%;
     width: 40%;
     background: #F9F9F9;
@@ -260,6 +261,7 @@
     color: #fff;
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .full-pr {
@@ -323,6 +325,33 @@
     font-size: 13px;
     color: #1363DF;
 }
+
+.pop-cont {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    z-index: 9;
+    background: #F3F1F5;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pop-cont button{
+    padding: 5px;
+    text-align: center;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    
+
+}
+
 .footer {
     position: absolute;
     bottom: 0%;

@@ -5,6 +5,7 @@ import { GrNext, GrPrevious } from 'react-icons/gr'
 import {motion} from 'framer-motion'
 
 const Contact = () => {
+    const [view, setView] = React.useState(false);
     return (
         <div>
             <div className="contact-page">
@@ -24,6 +25,26 @@ const Contact = () => {
             <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
                 
             </motion.div>
+            {
+                !view ? (
+                    <div className="pop-cont">
+                        <button onClick={() => {
+                    setView(true)
+                    console.log('Clicked')
+                    }}>Click to view Contact Details</button>
+                    </div>
+                ) : (
+                    <div className="pop-cont">
+                        <a href="mailto: aduwoayooluwa2017@gmail.com">aduwoayooluwa2017@gmail</a>
+                        <p>Contact Details: +234 8144341503</p>
+                        <button onClick={() => {
+                    setView(false)
+                    console.log('Closed')
+                    }}>x</button>
+                    </div>
+                )
+            }
+
             
         </div>
     )
