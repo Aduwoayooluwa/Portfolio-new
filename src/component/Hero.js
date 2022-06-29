@@ -100,7 +100,6 @@ const Hero = () => {
                 <motion.div
                 animate={{
                     scale: [1, 1.2, 1.2, 1, 1],
-                    rotate: [0, 0, 360, 360, 0],
                     borderRadius: ["20%", "20%", "50%", "50%", "20%"]
                 }}
                 whileHover={{
