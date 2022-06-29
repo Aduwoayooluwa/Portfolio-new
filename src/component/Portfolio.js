@@ -1,86 +1,73 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import { GrNext, GrPrevious } from 'react-icons/gr'
-import {motion} from 'framer-motion'
+import React from 'react'
 import Skills from './Skills'
-
+import { GrNext, GrPrevious } from 'react-icons/gr'
+import { Link } from 'react-router-dom'
+import { motion, MotionConfig }from 'framer-motion'
 const Portfolio = () => {
-    const [view, setView] = useState(false)
-
-
     return (
-        <div className="portfolio">
-            <div className="projects">
-
+        <div className="full-pr">
+            <div className="work-exp">
+                <h1>Experiences</h1>
                 <div>
-                    <img src='amzon.png' alt="" />
-                    <h2>Amazon Clone</h2>
-                    <p>An Ecommerce Website using React Js. The store api was gotten from Fake Store API</p>
-                    <button><a href='https://amazonclone-asl6od2gx-aduwoayooluwa.vercel.app/'>Open</a></button>
-                </div>
-                    
-                <div>
-                    <img src='Jumia 1.png' alt="" />
-                    <h2>Jumia Clone</h2>
-                    <p>An Ecommerce Website using React Js. This is a Jumia Clone. The store API was gotten from Fake Store API</p>
-                    <button><a href='#'>Open</a></button>
+                    <h2>Web Developer | Freelancer</h2>
+                    <p className="work-place">Fiverr</p>
+                    <p className="date-port">12/2019 - present</p>
                 </div>
 
                 <div>
-                <img src='3d-an1.webp' alt="" />
-                    <h2>Modern Dynamic Landing Page</h2>
-                    <p>An Ecommerce Website using React Js. This is a Jumia Clone. The store API was gotten from Fake Store API</p>
-                    <button><a href='https://swiftsleek-modernui.vercel.app/'>Open</a></button>
+                    <h2>Frontend Web Developer</h2>
+                    <p className="work-place">Sterling Bank Plc</p>
+                    <p className="date-port">04/2022 - present</p>
                 </div>
+
+                
                 <div>
-                <img src='3dan2.png' alt="" />
-                    <h2>Whitelist dApp</h2>
-                    <p>A Web 3 project created using React Js and etherJs </p>
-                    <button><a href='#'>Open</a></button>
+                    <h2>Frontend Web Developer</h2>
+                    <p className="work-place">Uridium Technologies Limited</p>
+                    <p className="date-port">04/2022 - present</p>
+                </div>
+
+            </div>
+
+            <div className="education">
+                <h1>Education</h1>
+            <div>
+                    <h2>Mechanical Engineering</h2>
+                    <p className="work-place">Federal University of Technology, Akure, Ondo State, Nigeria</p>
+                    <p className="date-port">04/2018 - present</p>
                 </div>
 
                 <div>
-                <img src='3dan1.png' alt="" />
-                    <h2>Crypto Web Project</h2>
-                    <p>A site that allows the user to transfer ether from a user to another.</p>
-                    <button><a href='#'>Open</a></button>
-                </div>
-
-                <div>
-                <img src='wordle-img.png' alt="" />
-                    <h2>A Wordle Game</h2>
-                    <p>A Wordle Game that was created using React Js. It was also integrated Moralis SDK for the Metamask Authentication, making it a web 3 project.</p>
-                    <button><a href='https://wordle-react-one.vercel.app/'>Open</a></button>
-                </div>
-
-                <div>
-                <img src='app-img.png' alt="" />
-                    <h2>DAO</h2>
-                    <p>A Decentralized Autonomous Organization (DAO) also using ReactJs, hardhat, etherJs.</p>
-                    <button><a href='#'>Open</a></button>
+                    <h2>Science Dept.</h2>
+                    <p className="work-place">Rehoboth College, Okitipupa, Ondo State, Nigeria</p>
+                    <p className="date-port">04/2015 - 07/2018</p>
                 </div>
             </div>
-            <motion.div   animate={{ x: 10 }} transition={{ delay: 0.5 }} className='prev-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/about"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
+
+
+            <motion.div   animate={{ x: -50 }} transition={{ delay: 0.5 }} className='prev-page'>
+            <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
                 
             </motion.div>
-            <motion.div   animate={{ x: 220 }} transition={{ delay: 0.5 }} className='next-page'>
+            <motion.div   animate={{ x: 250 }} transition={{ delay: 0.5 }} className='next-page'>
             <Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><GrNext fontSize='2rem' color='#2C3639' /></Link>
-                
             </motion.div>
-{/* 
-            {
-                view ? console.log(false) : (
-                    < Skills />
-                )
-            }
 
-            <div class="box">
-                <a class="button" href="#popup1">Let me Pop up</a>
+            <div className="skills">
+                <Skills />
             </div>
-            <div id='popup1' className="experience">
-                    < Skills />
-            </div> */}
+
+            <div className="interests">
+
+            </div>
+
+            <div className="social-icons">
+
+            </div>
+
+            <div className="btn-resume">
+                <button>Download Resume</button>
+            </div>
         </div>
     )
 }

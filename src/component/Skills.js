@@ -3,11 +3,12 @@ import './Skills.css'
 import { skills } from './Sk'
 const Skills = () => {
     return (
-        <div>
+        <div className="skills">
+            <h2>My Skills</h2>
             <div className="skill-list">
-            <a class="close" href="#">&times;</a>
+                
                 {skills.map((item, index) => (
-                    <div className="content">
+                    <div>
                         <p key={index}>{item}</p>
                     </div>
                 ))}

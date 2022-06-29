@@ -47,7 +47,7 @@ const About = () => {
                 
             </motion.div>
             <motion.div   animate={{ x: 100 }} transition={{ delay: 0.5 }} className='next-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio"><GrNext fontSize='2rem' color='#2C3639' /></Link>
+            <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><GrNext fontSize='2rem' color='#2C3639' /></Link>
                 
             </motion.div>
 

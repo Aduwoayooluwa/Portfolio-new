@@ -1,9 +1,11 @@
 import React from 'react'
 import {BsFacebook} from 'react-icons/bs'
 import { ImLinkedin, ImTwitter } from 'react-icons/im'
+import { GrGithub } from 'react-icons/gr'
 import { GrNext } from 'react-icons/gr'
 import { Link } from 'react-router-dom'
-import { motion, MotionConfig }from 'framer-motion'
+import { motion, MotionConfig }from 'framer-motion';
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
 
@@ -11,6 +13,21 @@ const Hero = () => {
         <div>
         <div className="hero">
             <div className="bio">
+            <Typewriter
+                    
+                    onInit={(typewriter)=> {
+
+                    typewriter
+                    
+                    .typeString("Welcome to ")
+                        
+                    .pauseFor(3000)
+                    .deleteAll()
+                    .typeString("My Portfolio Website")
+                    .start();
+                    }}
+                    />
+
                 <p id='name'>Hi I'm Ayo Aduwo</p>
                 <p>I'm a Full-Stack Web and Blockchain Developer passionate about building and creating websites for small, medium and large enterprises</p>
             </div>
@@ -23,7 +40,7 @@ const Hero = () => {
                 }}
                 whileHover={{
                     scale: 1.1,
-                    transition: { duration: 3 },
+                    transition: { duration: 10 },
                     borderRadius: "50%"
                 }}
                 whileTap={{ scale: 0.9, rotate: [0, 0, 360, 360, 0], }}
@@ -58,15 +75,19 @@ const Hero = () => {
 
             <div className="s-icons">
                 <motion.div animate={{ y: 50, x:30 }} whileHover={{scale: 1.2,  transition: { duration: 3 }}} transition={{ delay: 2 }} className='btns'>
-                    <BsFacebook className='icon-social' fontSize='1.5rem' color='#1363DF' />
+                    <a href='https://facebook.com/ayoaduwo03/'><BsFacebook className='icon-social' fontSize='1.5rem' color='#1363DF' /></a>
                 </motion.div>
                 
                 <motion.div animate={{ y: 50, x:30 }} whileHover={{scale: 1.2,  transition: { duration: 3 }}} transition={{ delay: 3 }} className='btns'>   
-                    <ImLinkedin className='icon-social' fontSize='1.5rem' color='#1363DF'/>
+                    <a href='https://www.linkedin.com/in/aduwo-ayooluwa/'><ImLinkedin className='icon-social' fontSize='1.5rem' color='#1363DF'/></a>
                 </motion.div>
                     
                 <motion.div animate={{ y: 50, x:30 }} whileHover={{scale: 1.2,  transition: { duration: 2 }}} transition={{ delay: 4 }} className='btns'>
-                    <ImTwitter className='icon-social' fontSize='1.5rem' color='#47B5FF'/>
+                    <a href='https://twitter.com/AyoAduwo' ><ImTwitter className='icon-social' fontSize='1.5rem' color='#47B5FF'/></a>
+                </motion.div>
+
+                <motion.div animate={{ y: 50, x:30 }} whileHover={{scale: 1.2,  transition: { duration: 2 }}} transition={{ delay: 5 }} className='btns'>
+                    <a href='https://github.com/Aduwoayooluwa'><GrGithub className='icon-social' fontSize='1.5rem' /></a>
                 </motion.div>
                 
             </div>

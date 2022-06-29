@@ -17,8 +17,13 @@ const Navbar = () => {
                     <Link style={{textDecoration: 'none', color: 'black'}} to="/about">About</Link>
                 </div>
 
+                
                 <div>
-                <Link style={{textDecoration: 'none', color: 'black'}} to="/Portfolio">Portfolio</Link>
+                    <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><p>Projects</p></Link>
+                </div>
+                
+                <div>
+                <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio">Portfolio</Link>
                 </div>
 
                 <div>
