@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { motion, MotionConfig }from 'framer-motion'
 const Portfolio = () => {
     return (
+        <>
         <div className="full-pr">
             <div className="work-exp">
                 <h1>Experiences</h1>
@@ -45,14 +46,7 @@ const Portfolio = () => {
             </div>
 
 
-            <motion.div   animate={{ x: -50 }} transition={{ delay: 0.5 }} className='prev-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
-                
-            </motion.div>
-            <motion.div   animate={{ x: 250 }} transition={{ delay: 0.5 }} className='next-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><GrNext fontSize='2rem' color='#2C3639' /></Link>
-            </motion.div>
-
+        
             <div className="skills">
                 <Skills />
             </div>
@@ -69,6 +63,15 @@ const Portfolio = () => {
                 <button>Download Resume</button>
             </div>
         </div>
+        <motion.div   animate={{ x: 10 }} transition={{ delay: 0.5 }} className='prev-page m-pr-page m-pr-page2'>
+        <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
+            
+        </motion.div>
+        <motion.div   animate={{ x: 200 }} transition={{ delay: 0.5 }} className='next-page m-nx-page m-nx-page'>
+        <Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><GrNext fontSize='2rem' color='#2C3639' /></Link>
+        </motion.div>
+
+        </>
     )
 }
 

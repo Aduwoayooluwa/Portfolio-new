@@ -60,11 +60,11 @@ const Projects = () => {
                     <button><a href='#'>Open</a></button>
                 </div>
             </div>
-            <motion.div   animate={{ x: 10 }} transition={{ delay: 0.5 }} className='prev-page'>
+            <motion.div   animate={{ x: 10 }} transition={{ delay: 0.5 }} className='prev-page m-pr-page'>
             <Link style={{textDecoration: 'none', color: 'black'}} to="/about"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
                 
             </motion.div>
-            <motion.div   animate={{ x: 220 }} transition={{ delay: 0.5 }} className='next-page'>
+            <motion.div   animate={{ x: 220 }} transition={{ delay: 0.5 }} className='next-page m-nx-page'>
             <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio"><GrNext fontSize='2rem' color='#2C3639' /></Link>
                 
             </motion.div>

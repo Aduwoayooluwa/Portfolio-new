@@ -1,0 +1,174 @@
+@media screen and (max-width: 800px) {
+    .hero {
+        height: 70vh;
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        font-family: 'Trispace', sans-serif;
+    }
+
+    .hero .bio p {
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero .bio #name {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .hero .btns-hero{
+        display: flex;
+        position: absolute;
+        left: 10%;
+    }
+
+    .next-page {
+        position: absolute;
+        right: 30%;
+        top: 40%;
+    }
+    
+    .prev-page {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+
+    .m-pr-page {
+        position: absolute;
+        left: 8%;
+        top: 40%;
+    }
+
+    .m-nx-page {
+        position: absolute;
+        right: 54%;
+        top: 40%;
+    }
+
+    .m-pr-page2 {
+        position: absolute;
+        left: 13%;
+        top: 40%;
+    }
+
+    .m-nx-page2 {
+        position: absolute;
+        right: 70%;
+        top: 40%;
+    }
+
+    .img-sec img {
+        width: 300px;
+        display: none;
+
+    }
+
+    .bio {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .bio #name {
+        font-size: 15px;
+    }
+
+    .d-nav{
+        display: none;
+        visibility: hidden;
+    }
+
+    .mb-nv {
+        visibility: visible;
+        display: flex;
+        margin-top: 0;
+        width: 100%;
+        justify-content: space-around;
+
+
+    }
+
+    .about-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    .about-bio {
+        position: absolute;
+        top: 13%;
+        left: 18%;
+        height: 600px;
+        width: 300px;
+    }
+
+    .full-pr {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        width: 80%;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+    .education {
+        position: absolute;
+        left: 50vh;
+        width: 400px;;
+    }
+
+    .skills {
+        position: absolute;
+        left: 50vh;
+        width: 200px;
+        text-align: center;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0%;
+        left: 30%;
+    }
+
+    .contact-page {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        width: 40%;
+        height: 50vh;
+        background: #F9F9F9;
+        padding: 20px;
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+
+    .contact-page input[type='text'], input[type='email'] {
+        width: 51%;
+        height: 20px;
+        margin: 10px 20px;
+        outline: none;
+        padding: 0 30px;
+    }
+    .contact-page button {
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+    }
+
+    .contact-page textarea {
+        width: 51%;
+        height: 30%;
+        padding: 30px;
+        outline: none;
+    }
+
+    .pop-cont {
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+        z-index: 9;
+        background: #F3F1F5;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}

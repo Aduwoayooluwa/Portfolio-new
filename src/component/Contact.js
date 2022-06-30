@@ -1,5 +1,4 @@
 import React from 'react'
-import App from './carousel/App'
 import {Link} from 'react-router-dom'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 import {motion} from 'framer-motion'

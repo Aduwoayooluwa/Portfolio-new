@@ -6,11 +6,12 @@ import { GrNext } from 'react-icons/gr'
 import { Link } from 'react-router-dom'
 import { motion, MotionConfig }from 'framer-motion';
 import Typewriter from "typewriter-effect";
-
+import TypeWriter from 'react-typewriter';
+import '../Mobile.css'
 const Hero = () => {
 
     return (
-        <div>
+        <div className="h-sect">
         <div className="hero">
             <div className="bio">
             <Typewriter
@@ -28,8 +29,9 @@ const Hero = () => {
                     }}
                     />
 
-                <p id='name'>Hi I'm Ayo Aduwo</p>
-                <p>I'm a Full-Stack Web and Blockchain Developer passionate about building and creating websites for small, medium and large enterprises</p>
+                <TypeWriter typing={1}><p id='name'>Hi I'm Ayo Aduwo</p></TypeWriter>
+                <TypeWriter typing={1}> <p>I'm a Full-Stack Web and Blockchain Developer passionate about building and creating websites for small, medium and large enterprises</p></TypeWriter>
+
             </div>
 
             <motion.div className='circle' 
@@ -96,7 +98,7 @@ const Hero = () => {
         <div className='img-sec'>
             {/* Image Profile */}
             <MotionConfig reducedMotion="user">
-            <div className="example-container">
+            <div className="img-cont">
                 <motion.div
                 animate={{
                     scale: [1, 1.2, 1.2, 1, 1],

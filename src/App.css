@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
 
-.nav nav {
+.nav .d-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -11,26 +11,27 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-.nav nav > .logo {
+.nav .d-nav > .logo {
     font-weight: bold;
     font-size: 22px;
 }
 
-.nav nav > div {
+.nav .d-nav > div {
     cursor: pointer;
 }
 
-.nav nav .logo span {
+.nav .d-nav .logo span {
     color: #1363DF;
 }
 
-.nav nav button {
+.nav .d-nav button {
     width: 102px;
-    height: 35px;
+    padding: 10px;
     border-radius: 20px;
     background-color: transparent;
     border: 2px solid grey;
     cursor: pointer;
+    text-align: center;
 }
 
 /* Hero Section */
@@ -128,6 +129,7 @@
     position: absolute;
     right: 15%;
     top: 13%;
+    z-index: -1;
 }
 
 .about-bio {
@@ -356,4 +358,8 @@
     position: absolute;
     bottom: 0%;
     left: 43%;
+}
+
+.mb-nv {
+    display: none;
 }
