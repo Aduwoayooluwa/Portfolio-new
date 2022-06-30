@@ -1,4 +1,8 @@
 # Getting Started with Create React App
+Hi there ! I an Ayo Aduwo
+This is my Portfolio Website
+My twitter [Twitter](https://twitter.com/AyoAduwo)
+My LinkdIn [LinkedIn](https://www.linkedin.com/in/aduwo-ayooluwa/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
