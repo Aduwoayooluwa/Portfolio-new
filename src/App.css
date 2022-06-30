@@ -205,7 +205,8 @@
 .portfolio .projects > div button {
     text-align: center;
     width: 102px;
-    height: 40px;
+    padding: 10px;
+    text-align: center;
     border: none;
     border-radius: 25px;
     background-color: #1363DF;
@@ -296,7 +297,8 @@
 
 .full-pr  button {
     width: 25vh;
-    height: 6vh;
+    padding: 3vh;
+    text-align: center;
     border-radius: 25px;
     border: none;
     background: #1363DF;
@@ -337,6 +339,7 @@
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    opacity: 0.8;
 }
 
 .pop-cont button{
