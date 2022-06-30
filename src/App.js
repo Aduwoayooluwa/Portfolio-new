@@ -7,11 +7,23 @@ import Projects from './component/Projects';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './component/Footer';
 import Portfolio from './component/Portfolio';
+import {useSelector, useDispatch} from 'react-redux';
+import { MdDarkMode } from 'react-icons/md'
+import { HiLightBulb } from 'react-icons/hi'
+import { setTheme } from './redux/ThemeReducer'
 
 function App() {
+  const {theme}  = useSelector((state) => state.theme)
+  const dispatch = useDispatch()
+
+  console.log(theme)
+
   return (
-    <div className="App">
-    
+    <div className="App" style={{backgroundColor: theme ? '#fff' : '#2B2B28', height: '100vh'}} >
+        <div className="theme-change">
+            <MdDarkMode  style={{color: ''}} fontSize='25px' onClick={() => dispatch(setTheme(false))}/>
+            <HiLightBulb  style={{color: '#F5F0BB'}} fontSize='25px' onClick={() => dispatch(setTheme(true))}/>
+        </div>
 
       <Navbar />
         <Routes>

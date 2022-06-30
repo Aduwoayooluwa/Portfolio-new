@@ -128,8 +128,11 @@
 .about-img {
     position: absolute;
     right: 15%;
-    top: 13%;
-    z-index: -1;
+    top: 20%;
+    -webkit-box-shadow: 0 10px 6px -6px #F6E3C5;
+    -moz-box-shadow: 0 10px 6px -6px #F6E3C5;
+    box-shadow: 0 10px 6px -6px #F6E3C5;
+
 }
 
 .about-bio {
@@ -365,4 +368,18 @@
 
 .mb-nv {
     display: none;
+}
+
+.theme-change {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: transparent;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 10px -6px #777;
+
 }
