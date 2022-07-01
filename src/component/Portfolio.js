@@ -67,7 +67,7 @@ const Portfolio = () => {
         <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
             
         </motion.div>
-        <motion.div   animate={{ x: 200 }} transition={{ delay: 0.5 }} className='next-page m-nx-page m-nx-page'>
+        <motion.div   animate={{ x: 200 }} transition={{ delay: 0.5 }} className='next-page m-nx-page2'>
         <Link style={{textDecoration: 'none', color: 'black'}} to="/contact"><GrNext fontSize='2rem' color='#2C3639' /></Link>
         </motion.div>
 

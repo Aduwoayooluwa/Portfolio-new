@@ -14,21 +14,28 @@
 }
 
 .m-nav {
-    position: sticky;
+    position: absolute;
+    left: 10%;
+    top : -2%;
     background: #EFFFFD;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
 main {
         display: flex;
         position: absolute;
-        right: 30%;
+        left: -10%;
         top: 0;
+        z-index: 1;
     }
 
 aside {
         background-color: #1363DF;
-        width: 18.75rem;
+        width: 20vh;
         height: 100vh;
+        position: absolute;
         
 
     }

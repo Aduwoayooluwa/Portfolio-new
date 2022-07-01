@@ -8,7 +8,7 @@ import {useSelector, useDispatch} from 'react-redux';
 const About = () => {
     const {theme}  = useSelector((state) => state.theme)
     return (
-        <div>
+        <div className="abt-me">
             <motion.div
             whileHover={{
                     scale: 1.1,

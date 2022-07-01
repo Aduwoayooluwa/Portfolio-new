@@ -103,7 +103,7 @@
     min-height: 150px;
     width: 150px;
     border-radius: 50%;
-    z-index: -1;
+    opacity: 0.5
 }
 
 /* next page icon */
@@ -140,11 +140,14 @@
     box-shadow: 0 10px 6px -6px #F6E3C5;
 
 }
+.abt-me {
+
+}
 
 .about-bio {
     position: absolute;
-    top: 13%;
-    left: 18%;
+    top: 10%;
+    left: 10%;
     background-color: rgb(194, 185, 230);
     height: 600px;
     width: 400px;
@@ -152,7 +155,7 @@
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Questrial', sans-serif; 
 }
 .about-bio h2 {
     text-align: center;
@@ -368,9 +371,12 @@
 }
 
 .footer {
+    background: transparent;
+    width: 100%;
+    text-align: center;
     position: absolute;
     bottom: 0%;
-    left: 43%;
+
 }
 /* .footer {
 } */
@@ -380,7 +386,7 @@
 
 .theme-change {
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 10%;
     background: transparent;
     border-radius: 25px;
@@ -389,5 +395,6 @@
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 10px -6px #777;
+    z-index: 9;
 
 }

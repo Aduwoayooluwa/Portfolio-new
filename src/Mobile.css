@@ -1,4 +1,209 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 60vh;
+        width: 60%;
+        position: absolute;
+
+        padding: 10px;
+        font-family: 'Trispace', sans-serif;
+        background-color: red;
+        
+    }
+
+    .hero .bio p {
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero .bio #name {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hero .btns-hero{
+        display: flex;
+        position: absolute;
+        left: 10%;
+    }
+
+    .next-page {
+        position: absolute;
+        left: 60%;
+        top: 40%;
+    }
+    
+    .prev-page {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+
+    .m-nx-page2 {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+
+    .m-nx-page {
+        position: absolute;
+        left: 30%;
+        top: 40%;
+    }
+
+    .m-pr-page {
+        position: absolute;
+        left: 0%
+    }
+    .img-sec img {
+        width: 300px;
+        display: none;
+
+    }
+
+    .bio {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .bio #name {
+        font-size: 15px;
+    }
+
+    .d-nav{
+        display: none;
+        visibility: hidden;
+    }
+
+    .mb-nv {
+        visibility: visible;
+        display: flex;
+        margin-top: 0;
+        width: 100%;
+        justify-content: space-around;
+
+
+    }
+
+    .about-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    .abt-me {
+        position: absolute;
+        left: -5%;
+        height: 600px;
+        width: 400px;
+        padding: 20px;
+    }
+    
+    .about-bio {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        height: 500px;
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .about-text p{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .full-pr {
+        margin: 10px 0;
+        position: absolute;
+        top: 15%;
+        display: flex;
+        width: 80%;
+        overflow: scroll;
+        overflow-y: hidden;
+        padding-top: 40px;
+    }
+    .education {
+        position: absolute;
+        left: 50vh;
+        width: 400px;;
+    }
+    .work-exp h2 {
+        font-size: 17px;
+    }
+
+    .work-exp h1 {
+        font-size: 20px;
+    }
+    .education h2 {
+        font-size: 17px;
+    }
+    .work-exp .work-place {
+        font-size: 14px;
+    }
+    .education h1 {
+        font-size: 20px;
+    }
+    .skills {
+        position: absolute;
+        left: 50vh;
+        width: 200px;
+        text-align: center;
+    }
+
+    .skills h2 {
+        font-size: 20px;
+    }
+    .footer {
+
+        text-align: center;
+        left: 0;
+        position: absolute;
+    }
+
+    .contact-page {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+        height: 50vh;
+        background: #F9F9F9;
+        padding: 20px;
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+
+    .contact-page input[type='text'], input[type='email'] {
+        width: 51%;
+        height: 20px;
+        margin: 10px 20px;
+        outline: none;
+        padding: 0 30px;
+    }
+    .contact-page button {
+        position: absolute;
+        bottom: -5%;
+        left: 15%;
+    }
+
+    .contact-page textarea {
+        width: 51%;
+        height: 30%;
+        padding: 30px;
+        outline: none;
+    }
+
+    .pop-cont {
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+        z-index: 9;
+        background: #F3F1F5;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+ @media screen and (max-width: 800px) {
     .hero {
         height: 70vh;
         width: 80%;
@@ -171,4 +376,173 @@
         border-radius: 10px;
         text-align: center;
     }
+} 
+
+@media screen and (max-width: 1300px){
+
+    .hero {
+        height: 70vh;
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        font-family: 'Trispace', sans-serif;
+    }
+
+    .hero .bio p {
+        width: 300px;
+        text-align: center;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .hero .bio #name {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hero .btns-hero{
+        display: flex;
+        position: absolute;
+        left: 10%;
+    }
+
+    .img-sec img {
+        width: 50%;
+        margin: 10% 0 0 30%;
+        
+
+    }
+
+    .bio {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .bio #name {
+        font-size: 15px;
+    }
+
+    .next-page {
+        position: absolute;
+        right: 40%;
+        top: 40%;
+    }
+    
+    .prev-page {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+
 }
+
+
+@media screen and (max-width: 1400px) {
+    .hero {
+        height: 70vh;
+        width: 80%;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        font-family: 'Trispace', sans-serif;
+    }
+
+    .hero .bio p {
+        width: 300px;
+        text-align: center;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .hero .bio #name {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hero .btns-hero{
+        display: flex;
+        position: absolute;
+        left: 10%;
+    }
+
+    .img-sec img {
+        width: 50%;
+        margin: 10% 0 0 30%;
+        
+
+    }
+
+    .bio {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .bio #name {
+        font-size: 15px;
+    }
+
+    .next-page {
+        position: absolute;
+        right: 40%;
+        top: 40%;
+    }
+    
+    .prev-page {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .hero {
+        height: 70vh;
+        width: 80%;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        font-family: 'Trispace', sans-serif;
+    }
+
+    .hero .bio p {
+        width: 300px;
+        text-align: center;
+        font-size: 15px;
+        justify-content: center;
+    }
+    .hero .bio #name {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hero .btns-hero{
+        display: flex;
+        position: absolute;
+        left: 10%;
+    }
+
+    .img-sec img {
+        width: 50%;
+        margin: 10% 0 0 30%;
+        
+
+    }
+
+    .bio {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .bio #name {
+        font-size: 15px;
+    }
+
+    .next-page {
+        position: absolute;
+        right: 40%;
+        top: 40%;
+    }
+    
+    .prev-page {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    } 
+} 
