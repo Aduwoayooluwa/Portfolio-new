@@ -19,8 +19,8 @@ function App() {
   console.log(theme)
 
   return (
-    <div className="App" style={{backgroundColor: theme ? '#fff' : '#2B2B28', height: '100vh'}} >
-        <div className="theme-change">
+    <div className="App" style={{backgroundColor: theme ? '#fff' : '#152238', height: '100vh'}} >
+        <div className="theme-change"  style={{backgroundColor: theme ? '#fff' : 'grey'}}>
             <MdDarkMode  style={{color: ''}} fontSize='25px' onClick={() => dispatch(setTheme(false))}/>
             <HiLightBulb  style={{color: '#F5F0BB'}} fontSize='25px' onClick={() => dispatch(setTheme(true))}/>
         </div>

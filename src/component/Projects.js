@@ -1,16 +1,17 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import { GrNext, GrPrevious } from 'react-icons/gr'
+import { GrNext, GrLinkNext, GrPrevious } from 'react-icons/gr'
 import {motion} from 'framer-motion'
 import Skills from './Skills'
+import {useSelector, useDispatch} from 'react-redux';
 
 const Projects = () => {
     const [view, setView] = useState(false)
-
+    const {theme}  = useSelector((state) => state.theme)
 
     return (
-        <div className="portfolio">
-            <div className="projects">
+        <div className="portfolio" >
+            <div className="projects" style={{backgroundColor: theme ? '#7858A6' : '#371B58'}}>
 
                 <div>
                     <img src='amzon.png' alt="" />
@@ -61,11 +62,11 @@ const Projects = () => {
                 </div>
             </div>
             <motion.div   animate={{ x: 10 }} transition={{ delay: 0.5 }} className='prev-page m-pr-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/about"><GrPrevious fontSize='2rem' color='#2C3639' /></Link>
+            <Link style={{textDecoration: 'none', color: 'red'}} to="/about"><GrPrevious fontSize='2rem' color='red' /></Link>
                 
             </motion.div>
             <motion.div   animate={{ x: 220 }} transition={{ delay: 0.5 }} className='next-page m-nx-page'>
-            <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio"><GrNext fontSize='2rem' color='#2C3639' /></Link>
+            <Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/portfolio"><GrNext fontSize='2rem' color='red' /></Link>
                 
             </motion.div>
 {/* 

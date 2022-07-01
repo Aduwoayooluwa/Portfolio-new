@@ -1,8 +1,9 @@
 import React, {useState, useRef, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import App from './mobile/App';
-
+import {useSelector, useDispatch} from 'react-redux';
 const Navbar = () => {
+    const {theme}  = useSelector((state) => state.theme)
     const [drawer, setDrawer] = useState(false);
     const drawerRef = useRef(null)
 
@@ -25,28 +26,28 @@ const Navbar = () => {
         <div className="nav">
             <div className='d-nav'>
                 <div className="logo">
-                    <p>Ayooluwa <span>Aduwo</span></p>
+                    <p style={{color: theme ? '#212121' : '#ffff'}}>Ayooluwa <span>Aduwo</span></p>
                 </div>
 
                 <div>
-                    <Link style={{textDecoration: 'none', color: 'black'}} to="/"><p>Home</p></Link>
+                    <Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/"><p>Home</p></Link>
                 </div>
 
                 <div>
-                    <Link style={{textDecoration: 'none', color: 'black'}} to="/about">About</Link>
+                    <Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/about">About</Link>
                 </div>
 
                 
                 <div>
-                    <Link style={{textDecoration: 'none', color: 'black'}} to="/projects"><p>Projects</p></Link>
+                    <Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/projects"><p>Projects</p></Link>
                 </div>
                 
                 <div>
-                <Link style={{textDecoration: 'none', color: 'black'}} to="/portfolio">Portfolio</Link>
+                <Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/portfolio">Portfolio</Link>
                 </div>
 
                 <div>
-                    <button><Link style={{textDecoration: 'none', color: 'black'}} to="/contact">Contact</Link></button>
+                    <button><Link style={{textDecoration: 'none', color: theme ? '#212121' : '#ffff'}} to="/contact">Contact</Link></button>
                 </div>
             </div>
 

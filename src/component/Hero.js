@@ -8,16 +8,19 @@ import { motion, MotionConfig }from 'framer-motion';
 import Typewriter from "typewriter-effect";
 import TypeWriter from 'react-typewriter';
 import '../Mobile.css'
+import {useSelector, useDispatch} from 'react-redux';
+
 const Hero = () => {
+    const {theme}  = useSelector((state) => state.theme)
 
     return (
         <div className="h-sect">
         <div className="hero">
             <div className="bio">
             <Typewriter
-                    
+                    color="#fff"
                     onInit={(typewriter)=> {
-
+                    
                     typewriter
                     
                     .typeString("Welcome to ")
@@ -29,8 +32,8 @@ const Hero = () => {
                     }}
                     />
 
-                <TypeWriter typing={1}><p id='name'>Hi I'm Ayo Aduwo</p></TypeWriter>
-                <TypeWriter typing={1}> <p>I'm a Full-Stack Web and Blockchain Developer passionate about building and creating websites for small, medium and large enterprises</p></TypeWriter>
+                <TypeWriter typing={1}><p id='name' style={{color: theme ? '#212121' : '#ffff'}}>Hi I'm Ayo Aduwo</p></TypeWriter>
+                <TypeWriter typing={1}> <p style={{color: theme ? '#212121' : '#F7F7F7'}}>I'm a Full-Stack Web and Blockchain Developer passionate about building and creating websites for small, medium and large enterprises</p></TypeWriter>
 
             </div>
 

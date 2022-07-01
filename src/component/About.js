@@ -3,7 +3,10 @@ import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 import { myAbout } from './myAbout'
+import {useSelector, useDispatch} from 'react-redux';
+
 const About = () => {
+    const {theme}  = useSelector((state) => state.theme)
     return (
         <div>
             <motion.div
@@ -11,11 +14,11 @@ const About = () => {
                     scale: 1.1,
                     transition: { duration: 5 },
                     borderRadius: "25%"
-                            }}
+                            }} style={{backgroundColor: theme ? '#7858A6' : '#371B58', color: theme ? '#212121' : '#EEEEEE'}}
             className="about-bio">
                 <h2>About Me</h2>
 
-                <div className='about-text'>
+                <div className='about-text' style={{color: theme ? '#212121' : '#EEEEEE'}}>
                     <p>I am a professional Web developer with a lot of skills related to this field. I have 3 years of
                     experience as a web developer and I am versatile with frameworks and libraries like ReactJs, RemixJs,
                     NextJs, Redux.</p>
