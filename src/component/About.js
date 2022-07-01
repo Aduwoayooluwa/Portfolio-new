@@ -6,7 +6,7 @@ import { myAbout } from './myAbout'
 import {useSelector, useDispatch} from 'react-redux';
 
 const About = () => {
-    const {theme}  = useSelector((state) => state.theme)
+    const {theme}  = useSelector((state) => state.theme);
     return (
         <div className="abt-me">
             <motion.div

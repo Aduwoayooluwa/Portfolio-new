@@ -6,7 +6,7 @@
 
         padding: 10px;
         font-family: 'Trispace', sans-serif;
-        background-color: red;
+
         
     }
 
@@ -203,7 +203,7 @@
     }
 }
 
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .hero {
         height: 70vh;
         width: 80%;
